@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/sign_up_background.gif") no-repeat center;
+  background-size: cover;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sign_up_boxes {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.border_left {
+  border-right: 2px solid rgb(124, 18, 230);
+}
+
+.box_sign1 {
+  width: 450px;
+  height: 450px;
+  background-color: white;
+  box-shadow: -4px -4px 12px rgb(124, 18, 230);
+}
+.box_sign1 img {
+  width: 100%;
+  /* margin-top: 3rem; */
+}
+.box_sign2 {
+  width: 300px;
+  height: 450px;
+  background-color: white;
+  box-shadow: 4px 4px 12px rgb(124, 18, 230);
+}
+.box_sign2 input {
+  display: block;
+  /* padding-left: 0.6rem; */
+  width: 89%;
+  outline: none;
+  border: 2px solid rgb(124, 18, 230);
+  height: 45px;
+  border-radius: 0;
+  margin: 1.5rem auto;
+}
+.box_sign2 input[type="email"]{
+  padding-left: 1rem;
+}
+.box_sign2 input[type="password"]{
+  padding-left: 1rem;
+}
+.box_sign2 input:focus {
+  border: 2px solid rgb(124, 18, 230);
+  border-radius: 0;
+}
+.box_sign2 input[type="submit"] {
+  width: 100px;
+  color: white;
+  background-color: rgb(124, 18, 230);
+  border-radius: 2rem;
+  border: none;
+}
+.box_sign2 .box_head {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.forgot_password {
+  text-align: right;
+  margin-right: 1rem;
+}
+.form_submit {
+  padding: 0.6rem 2rem;
+  border-radius: 2rem;
+  background-color: rgb(124, 18, 230);
+  color: white;
+  border: none;
+  outline: none;
+  margin-left: 1rem;
+}
+.Login_handles {
+  margin-top: 3rem;
+  /* text-align: center; */
+}
+.icons_bottom {
+  margin-right: 0.8rem;
+}
+.login_bootom_para {
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
+}
+.fa-google {
+  color: lightgreen;
+  border: 2px solid red;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+.fa-facebook-f {
+  color: blue;
+  border: 2px solid blue;
+  padding: 0.3rem 0.5rem;
+  border-radius: 50%;
+  background-color: rgb(235, 237, 239);
+}
+.fa-twitter {
+  color: skyblue;
+  border: 2px solid skyblue;
+  padding: 0.3rem;
+  border-radius: 50%;
+  background-color: rgb(240, 243, 246);
+}
+@media screen and (max-width: 300px) {
+  
+  .box_sign2 {
+    text-align: center;
+  }
+  .Login_handles{
+    margin-top: 1rem;
+  }
+  .forgot_password{
+    margin-top: 1rem;
+  }
+  .login_bootom_para{
+    display: block;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .sign_up_boxes {
+     margin-top: 6rem;
+     height: 80vh;
+     margin-bottom: 10rem;
+  }
+  .box_sign1 {
+    width: 85%;
+    margin-bottom: 2rem;
+  }
+  .box_sign2 {
+    width: 85%;
+    margin-bottom: 10rem;
+  }
+}

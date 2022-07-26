@@ -1,0 +1,1320 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&family=Cairo&family=Lobster&family=Montserrat:wght@300;400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Baloo+Bhaijaan+2:wght@500;700&family=Bree+Serif&family=Cairo&family=Lobster&family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  font-size: 15px;
+  line-height: 1.4rem;
+}
+:root {
+  --yellow: rgb(238, 177, 9);
+  /* --red: red; */
+  --black: black;
+  --white: white;
+  --sky-blue: skyblue;
+}
+#container {
+  max-width: 1600px;
+}
+/** button floats ****/
+.button-floats{
+  position: fixed;
+  display: none;
+  margin: 1rem;
+  background-color: goldenrod;
+  outline: none;
+  border: none;
+  z-index: 10;
+  bottom: 30px;
+  left: 10px;
+  padding: 0.6rem 1rem;
+  border-radius: 3rem;
+}
+.button-floats a{
+ text-decoration: none;
+ color: #fff;
+}
+.button-floats.block{
+ display: block;
+ transition: 0.6s;
+}
+.button-floats img{
+  width: 20px;
+  height: 20px;
+}
+/************************************ navbar section ***********************************/
+#Navbar {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Varela Round', sans-serif;
+}
+.black_line {
+  background-color: var(--yellow);
+  height: 5px;
+}
+.Navigation {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.721);
+}
+.logo {
+  /* margin-left: 30px; */
+  font-size: 1.4rem;
+}
+#navbar .fa-kickstarter {
+  color: var(--white);
+  font-size: 3rem;
+  margin-left: 10px;
+}
+.icon {
+  margin-right: 0.4rem;
+}
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 450px;
+  /* margin-right: 80px; */
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 0.8rem;
+  border-radius: 1.5rem;
+  padding: 0.3rem 0.3rem;
+  transition: all 0.5s ease-in;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+ul li a:hover {
+  color: var(--yellow);
+  background-color: white;
+  box-shadow: 2px 2px 15px var(--sky-blue), -2px -2px 15px var(--sky-blue);
+  /* font-size: 1.5rem; */
+}
+.sign-In {
+  text-decoration: none;
+  border: 2px solid goldenrod;
+  padding: 0.3rem 0.7rem;
+  background-color: var(--black);
+  /* background-color: var(--white); */
+}
+.sign-In:hover {
+  color: var(--white);
+  box-shadow: 2px 2px 12px skyblue, -2px -2px 12px skyblue;
+}
+.sign-In a {
+  text-decoration: none;
+  color: var(--white);
+}
+.fa-sign-in {
+  font-size: 16px;
+}
+.hambergur {
+  display: none;
+  cursor: pointer;
+}
+.bars {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 5px 2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/********************* section poster and logo ******************************/
+.ymca_details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  /* align-items: center; */
+}
+.ymca_details .ymca_img {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+}
+.ymca_details .ymca_logo {
+  max-width: 240px;
+}
+.ymca_details .ymca_logo img {
+  width: 100%;
+}
+.ymca_details .ymca_img .ymca_poster {
+  max-width: 1000px;
+}
+.ymca_details .ymca_img .ymca_poster img {
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  width: 90%;
+}
+/* .ymca_details {
+    width: 100%;
+} */
+.ymca_details .ymca_social_handle {
+  width: 250px;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  color: var(--black);
+}
+.ymca_poster_and_icon {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.ymca_details .ymca_social_handle i {
+  margin-right: 0.2rem;
+}
+.ymca_details .ymca_social_handle a {
+  cursor: pointer;
+}
+
+.fa-facebook-f {
+  color: blue;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid blue;
+}
+.fa-facebook-f:hover {
+  background-color: rgb(237, 225, 225);
+}
+.fa-twitter {
+  color: skyblue;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  border: 1px solid skyblue;
+}
+.fa-twitter:hover {
+  background-color: rgb(232, 222, 222);
+}
+.fa-instagram {
+  color: red;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  border: 1px solid red;
+}
+.fa-instagram:hover {
+  background-color: rgb(237, 228, 228);
+}
+.fa-youtube-square {
+  color: red;
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  border: 1px solid red;
+}
+.fa-youtube-square:hover {
+  background-color: rgb(235, 228, 228);
+}
+.ymca_details .ymca_sir_js_img {
+  max-width: 100px;
+  margin-right: 0.7rem;
+}
+.ymca_details .ymca_sir_js_img img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid goldenrod;
+}
+
+/**************************************  about_ymca__section**************************************/
+#about_university {
+  /* margin-top: 3rem; */
+  padding: 3rem;
+  background: linear-gradient(to left,rgba(0, 0, 0, 0.772),white);
+  margin-bottom: 3rem;
+}
+.about_university_head {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.university_about_box {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  /* box-shadow: 2px 2px 12px skyblue, -2px -2px 12px skyblue; */
+}
+.university_about_box:last-child{
+    background: linear-gradient(to right,rgb(222, 188, 104),white);
+}
+.university_about_box p {
+  padding: 1rem;
+  text-align: justify;
+}
+.university_about_box iframe {
+  width: 100%;
+}
+/*************activities box section ***************/
+#activities {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  background-color: azure;
+}
+.activities_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.activities_box .activities_box_inside {
+  width: 330px;
+  margin: 2rem;
+  height: 260px;
+  border: 2px solid black;
+  padding: 1.5rem;
+  background: linear-gradient(to right top, orange, white);
+}
+.activities_box_inside .activities_images1 {
+  width: 100%;
+  height: 160px;
+  border: 2px solid black;
+}
+.activities_box_inside .activities_images1 img{
+  width: 100%;
+  height: 160px;
+  border: 2px solid black;
+}
+.activities_box_inside .activities_text1 {
+  height: 80px;
+  margin-top: 2rem;
+  padding: 0.6rem;
+  color: goldenrod;
+  background-color: black;
+  box-shadow: 5px 5px 21px white,-5px -5px 21px white;
+  text-align: center;
+}
+.activities_box_inside .activities_text1 button{
+  margin-top: 0.7rem;
+  padding: 0.3rem 1rem;
+  color: black;
+  border: 2px solid red;
+  background: white;
+  border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.activities_box_inside .activities_text1 button:hover{
+  color: white;
+  border: 2px solid red;
+  background: blue;
+  border-radius: 2rem;
+  transform:translateY(-10%);
+  box-shadow: 3px 3px 12px skyblue,-3px -3px 12px skyblue;
+}
+/*************************************** animation_section ************************************/
+#animation_section {
+  height: 300px;
+  margin-top: 3rem;
+  background: url("/images/gifs_images_ymca.gif") no-repeat center center;
+  background-size: cover;
+  margin-bottom: 3rem;
+  background-color: pink;
+}
+/**************************************  videos_section**************************************/
+#videos {
+  padding-top: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  background: linear-gradient(to right top,black,white);
+}
+.container_box {
+  max-width: 1500px;
+  margin: auto;
+}
+.videos_head {
+  font-size: 2rem;
+  display: inline-block;
+  font-weight: 700;
+  border-bottom: 2px solid goldenrod;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 2rem;
+}
+.videos_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.first_page_div {
+  box-shadow: 2px 2px 12px skyblue, -2px -2px 12px skyblue;
+  margin: 1.5rem;
+  padding: 1.2rem;
+  color: black;
+  width: 330px;
+  background: linear-gradient(to left top, rgb(241, 208, 124), white);
+  height: 370px;
+  transition: all 0.4s ease-in-out;
+}
+.first_page_div p {
+  margin-top: 1rem;
+  line-height: 1.3rem;
+  text-align: justify;
+}
+.first_page_div_text .home_first_btn {
+  margin-top: 1.2rem;
+  padding: 0.5rem 1.2rem;
+  outline: none;
+  color: white;
+  border-radius: 2rem;
+  background-color: black;
+  border: 2px solid red;
+  transition: all 0.5s ease-in-out;
+}
+.first_page_div_text .home_first_btn:hover {
+  color: goldenrod;
+  background-color: white;
+  box-shadow: 2px 2px 12px skyblue, -2px -2px 12px skyblue;
+}
+.first_page_div:hover {
+  box-shadow: 4px 4px 15px black, -4px -4px 15px black;
+}
+.first_page_image_box {
+  width: 100%;
+  height: 154px;
+  border: 2px solid goldenrod;
+}
+.Samarpan {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.first_page_div img {
+  width: 100%;
+  height: 151px;
+}
+.first_page_div iframe {
+  width: 100%;
+  height: auto;
+}
+/************************************** buttons section ***************************************/
+#buttons{
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.both_buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left_btn{
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid black;
+  background-color: goldenrod;
+  color: white;
+  outline: none;
+}
+
+.right_btn{
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid black;
+  background-color: goldenrod;
+  color: white;
+  outline: none;
+}
+/************************************** information section **********************************/
+#information{
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+.information_box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.information_box_inside{
+  padding-top: 2rem;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+}
+.information_box_inside i{
+  color: goldenrod;
+  font-size: 80px;
+  animation-name: icons;
+  position: relative;
+  animation: icon_all 2s ease-in 1s infinite;
+  transition: all 0.5s ease-in-out;
+}
+.information_box_inside p{
+  margin: 2rem;
+  text-align: justify;
+}
+@keyframes icon_all {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.4);
+    color: red;
+  }
+
+}
+
+/************************************** footer section **************************************/
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footer .fa-kickstarter {
+  font-size: 30px;
+  padding-right: 0.2rem;
+}
+.footers_section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.footer .box_foot {
+  width: 260px;
+  margin: 1.2rem 1.2rem;
+}
+.box_foot .footer_para a {
+  text-decoration: none;
+  color: var(--white);
+}
+.box_foot .footer_para {
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 1.5rem;
+}
+.box_foot .footer_para i {
+  padding-right: 0.4rem;
+  color: var(--yellow);
+}
+.box-foot .fa-radiation-alt {
+  font-size: 20px;
+}
+.footer .box_logos {
+  margin-top: 0.6rem;
+}
+
+.box_foot .footer_clubs a {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+}
+.box_foot .footer_clubs i {
+  color: var(--yellow);
+  padding-right: 0.2rem;
+}
+
+.box_foot .all_pages a {
+  text-decoration: none;
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+}
+.box_foot .all_pages a:hover {
+  color: var(--yellow);
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--yellow);
+  border-right: 1px solid var(--yellow);
+}
+.box_foot .all_pages i {
+  margin-right: 0.4rem;
+  color: var(--yellow);
+}
+.box_foot .footer_clubs a:hover {
+  color: var(--yellow);
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--yellow);
+  border-right: 1px solid var(--yellow);
+}
+.clubs_all {
+  display: flex;
+  /* align-items: center; */
+  align-content: center;
+  justify-content: space-between;
+}
+.footer_images img {
+  width: 65px;
+  height: 55px;
+  margin: 0.3rem;
+  border-radius: 0.3rem;
+}
+.footer .bootom_para {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1.4rem;
+}
+.footer h3 {
+  margin-bottom: 1rem;
+  color: var(--yellow);
+}
+
+@media screen and (max-width: 430px) {
+  .first_page_div {
+    width: 80%;
+  }
+  .university_about_box {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 300px;
+  }
+  .span_sign_in {
+    display: none;
+  }
+  .ymca_details .ymca_logo {
+    max-width: 20px;
+  }
+  .ymca_details .ymca_logo img {
+    width: 100%;
+  }
+  .ymca_details .ymca_sir_js_img {
+    width: 100px;
+    height: 100px;
+    margin-right: 0.3rem;
+  }
+  /* .ymca_details .ymca_sir_js_img img {
+        width: 100%;
+        border-radius: 50%;
+        border: 2px solid goldenrod;
+      } */
+  .footer h3 {
+    text-align: center;
+  }
+  .box_foot .all_pages {
+    text-align: center;
+  }
+  .box_foot .box_logos {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* .nav-menu{
+        margin-right: 0px;
+    }  */
+    .first_page_div{
+      height: auto;
+    }
+    .first_page_div .first_page_image_box{
+      height: 250px;
+    }
+    .first_page_div .first_page_image_box img{
+      height: 248px;
+    }
+    .first_page_div .first_page_image_box iframe{
+      height: 248px;
+    }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .ymca_details .ymca_logo {
+    max-width: 120px;
+  }
+  .ymca_details .ymca_logo img {
+    width: 100%;
+  }
+  .ymca_details .ymca_img .ymca_poster img {
+    width: 100%;
+  }
+  .ymca_details .ymca_img {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+  }
+  /************************************navbar ***************************************/
+  .hambergur {
+    display: block;
+  }
+  .nav-menu {
+    /* display: none; */
+    position: fixed;
+    left: -50%;
+    top: 85px;
+    padding-left: 0;
+    justify-content: right;
+    flex-direction: column;
+    background-color: var(--black);
+    width: 50%;
+    text-align: center;
+    height: 100vh;
+    transition: 0.3s;
+    z-index: 4;
+    min-width: 0px;
+  }
+  .list-item:first-child {
+    margin-top: 2rem;
+  }
+  .nav-menu.active {
+    left: 0px;
+  }
+  .list-item {
+    margin: 1rem;
+  }
+  .list-item a:hover {
+    /* padding-top: 2rem; */
+    width: 100%;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--yellow);
+  }
+
+  .sign-In {
+    display: block;
+  }
+  .bars {
+    margin: 5px 1rem;
+  }
+  .hambergur.active .bars:nth-child(2) {
+    opacity: 0;
+  }
+  .hambergur.active .bars:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hambergur.active .bars:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .first_page_div {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .first_page_div {
+    width: 85%;
+    height: auto;
+  }
+  .first_page_div .first_page_image_box{
+    height: 200px;
+  }
+  .first_page_div .first_page_image_box img{
+    height: 198px;
+  }
+  .first_page_div .first_page_image_box iframe{
+    height: 198px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .university_about_box:last-child {
+    height: auto;
+  }
+  .fa-facebook-f {
+    font-size: 0.7rem;
+  }
+  .fa-twitter {
+    font-size: 0.7rem;
+  }
+  .fa-instagram {
+    font-size: 0.7rem;
+  }
+  .fa-youtube-square {
+    font-size: 0.7rem;
+  }
+  .ymca_details .ymca_logo {
+    max-width: 70px;
+  }
+  .ymca_details .ymca_logo img {
+    width: 100%;
+  }
+  .ymca_details .ymca_sir_js_img {
+    max-width: 80px;
+    /* margin-right: 0.3rem; */
+  }
+  .ymca_details .ymca_sir_js_img img {
+    width: 70px;
+    border-radius: 50%;
+    /* border: 2px solid goldenrod; */
+  }
+}
+@media screen and (max-width: 1180px) {
+  .ymca_poster_and_icon {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ymca_details .ymca_social_handle {
+    margin: 0.2rem 0.5rem;
+  }
+}
+
+#preloader {
+  background: white url("/images/preloader2.gif") no-repeat center center;
+  background-size: 25%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+/********************************* Manan page css*************************************/
+.main-head {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0.6rem;
+  background-color: goldenrod;
+  color: white;
+  box-shadow: 2px 2px 12px lightseagreen, -2px -2px 12px lightseagreen;
+}
+#Manan_main_section {
+  width: 90%;
+  margin: 3rem auto;
+  background-color: azure;
+  /* font-size: 0.9rem; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* background: url('/images/manan_box_bg.png') no-repeat center center;
+  background-size: cover; */
+}
+#Manan_main_section:nth-child(even) {
+  background: url("/images/manan_box_bg.png") no-repeat center center;
+  background-size: cover;
+}
+.about_manan {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 2px 2px 12px lightseagreen, -2px -2px 12px lightseagreen;
+}
+.manan_section_box {
+  width: 540px;
+  height: 370px;
+  background-color: black;
+  color: white;
+}
+.manan_head {
+  font-size: 30px;
+  color: goldenrod;
+  font-weight: bold;
+}
+.manan_para {
+  margin-top: 1rem;
+}
+.paras {
+  margin-top: 1rem;
+}
+.paras p {
+  margin-top: 0.5rem;
+  /* line-height: 0.5rem; */
+}
+.paras span {
+  font-size: 15px;
+  font-weight: bold;
+}
+.manan_section_box:first-child {
+  border-right: 2px solid goldenrod;
+}
+.manan_section_box:first-child img {
+  width: 100%;
+  height: 100%;
+}
+.manan_section_box:last-child {
+  padding: 1rem;
+  text-align: justify;
+}
+.manan_btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  outline: 0px;
+  border: none;
+  color: white;
+  background-color: goldenrod;
+  transition: all 0.4s ease-in-out;
+}
+.manan_btn:hover {
+  color: black;
+  font-size: 1rem;
+  background-color: white;
+  box-shadow: 2px 2px 12px skyblue, -2px -2px 12px skyblue;
+}
+
+/********************** manan_section2 ***********************/
+#manan_section2 {
+  width: 93%;
+  margin: 3rem auto;
+  background-color: azure;
+}
+.about_manan2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 2px 2px 12px goldenrod, -2px -2px 12px goldenrod;
+}
+
+.manan_box2 {
+  width: 550px;
+  height: 350px;
+  background-color: black;
+  color: white;
+}
+.manan_box2:first-child {
+  padding: 1.5rem;
+  border-right: 2px solid goldenrod;
+}
+.manan_box2 img{
+  width: 100%;
+  height: 100%;
+}
+.manan_box2:last-child iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  #Manan_main_section {
+    width: 90%;
+  }
+  .manan_section_box {
+    width: 90%;
+  }
+  .manan_box2 {
+    width: 90%;
+  }
+  .manan_section_box:last-child {
+    padding: 0.7rem;
+    text-align: justify;
+  }
+  .manan_section_box:first-child {
+    border-right: 0px;
+    border-bottom: 2px solid goldenrod;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .manan_section_box {
+    width: 85%;
+    height: auto;
+    /* margin: 0.5rem 0.5rem; */
+  }
+  .manan_box2 {
+    width: 85%;
+    height: auto;
+    /* margin: 0.5rem 0.5rem; */
+  }
+  .manan_box2:last-child iframe {
+    width: 100%;
+    height: 400px;
+  }
+  .manan_section_box:first-child {
+    border-right: 0px;
+    border-bottom: 2px solid goldenrod;
+  }
+}
+
+/****************************** About us Page css  *****************************/
+#about_us_section1 {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/about_us_main_photo.png") no-repeat center center;
+  background-size: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+.about_us_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.about_box1 {
+  width: 20%;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+}
+.about_box1 p {
+  text-align: justify;
+}
+.about_box1 h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.about_box1 .about_btn {
+  width: 100px;
+  padding: 0.4rem 0.7rem;
+  margin: 1rem;
+  color: goldenrod;
+  background-color: black;
+  border-radius: 2rem;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.about_box1 .about_btn:hover {
+  color: white;
+  background-color: blue;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 12px goldenrod, -2px -2px 12px goldenrod;
+}
+/*************** details section *******************/
+#details_section1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: azure;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.box_details1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+}
+.box_details1 .details_inside_box {
+  width: 27%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  box-shadow: 2px 2px 12px black, -2px -2px 12px black;
+  transition: all 0.4s ease-out;
+}
+.box_details1 .details_inside_box:hover {
+  box-shadow: 4px 4px 15px goldenrod, -4px -4px 15px goldenrod;
+  transform: scale(1.05);
+}
+.details_inside_box .details_text {
+  padding: 1rem;
+  text-align: center;
+}
+
+.details_inside_box .details_text button {
+  text-align: center;
+  padding: 0.4rem 1.2rem;
+  color: goldenrod;
+  background-color: black;
+  margin: 1rem;
+  border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.details_inside_box .details_text button:hover {
+  color: white;
+  background-color: blue;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 12px goldenrod, -2px -2px 12px goldenrod;
+}
+.details_inside_box .details_text span {
+  width: 12px;
+  background-color: black;
+  color: black;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+.details_inside_box .details_image img {
+  width: 100%;
+  /* height: 170px; */
+}
+
+.details_inside_box .details_text h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.details_inside_box .details_text p {
+  text-align: justify;
+}
+/*************************** our team section ************************/
+#our_team1 {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.our_team_div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.our_team_box {
+  width: 35%;
+  padding: 1rem;
+  text-align: justify;
+  box-shadow: 4px 4px 15px goldenrod, -4px -4px 15px goldenrod;
+}
+.our_team_box img {
+  width: 100%;
+}
+.our_team_head {
+  font-size: 35px;
+  font-weight: bold;
+}
+.our_team_box p {
+  font-size: 1.2rem;
+  margin-top: 0.6rem;
+}
+.our_team_box button {
+  text-align: center;
+  padding: 0.4rem 1.2rem;
+  color: goldenrod;
+  background-color: black;
+  margin: 1rem;
+  border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+.our_team_box button:hover {
+  color: white;
+  background-color: blue;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 12px goldenrod, -2px -2px 12px goldenrod;
+}
+/************ about_section_media_query ****************/
+@media screen and (max-width: 970px) {
+  #details_section1 {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .box_details1 .details_inside_box {
+    width: 40%;
+  }
+  .about_box1 {
+    width: 50%;
+  }
+  /****oure team ****/
+  #our_team1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .about_box1:last-child {
+    display: none;
+    font-size: 1.5rem;
+  }
+  .our_team_div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .our_team_box {
+    width: 85%;
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about_box1 {
+    width: 80%;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 1.2rem;
+  }
+  .box_details1 {
+    padding: 1rem;
+  }
+  .box_details1 .details_inside_box {
+    width: 90%;
+  }
+}
+
+/******************contact us section *****************/
+#contact_us_section {
+  width: 100%;
+ background-color: white;
+}
+.Get_head {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  padding-top: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 7px black;
+}
+.contact_box {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact_inside_box1:first-child {
+  padding: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contact_div_text h2 {
+  color: black;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.contact_div_text p {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+.contact_div_text p:last-child {
+  margin-bottom: 1rem;
+}
+.contact_div_text p a {
+  text-decoration: none;
+  color: black;
+}
+.contact_image1 img {
+  width: 100%;
+  box-shadow: 2px 2px 12px black, -2px -2px 12px black;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.7;
+}
+.contact_image1 img:hover {
+  box-shadow: 2px 2px 12px goldenrod, -2px -2px 12px goldenrod;
+  transform: scale(1.02);
+  opacity: 1;
+}
+.contact_inside_box1 {
+  width: 550px;
+  padding: 1rem;
+  /* color: white; */
+  margin: 1rem;
+  background: linear-gradient(skyblue, azure, lightgreen);
+
+}
+.form_main_box {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  /* padding-top: 1rem; */
+}
+.box_first_last_name {
+  width: 100%;
+  margin: 0.7rem;
+}
+.form_main_box label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.form_main_box input {
+  width: 240px;
+  height: 35px;
+  padding-left: 0.6rem;
+  margin-top: 0.4rem;
+}
+.tel_box {
+  margin-top: 1rem;
+}
+.tel_box label {
+  margin-left: 0.4rem;
+  margin-top: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.tel_box input {
+  width: 97%;
+  height: 35px;
+  padding-left: 0.6rem;
+  margin-left: 0.4rem;
+  margin-top: 0.4rem;
+}
+.form_textarea {
+  margin-top: 1rem;
+}
+.form_textarea label {
+  margin-left: 0.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.form_textarea textarea {
+  width: 97%;
+  padding: 0.6rem;
+  margin-left: 0.4rem;
+  margin-top: 0.4rem;
+  resize: none;
+}
+.submit_btn {
+  padding: 0.3rem 1.5rem;
+  margin: 1.2rem 0.3rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  background-color: goldenrod;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.submit_btn:hover {
+  transform: scale(1.06);
+  color: black;
+  background-color: aqua;
+  box-shadow: 2px 2px 12px skyblue, -2px -2px 12px skyblue;
+}
+/*************** map section *****************/
+#map1 {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background: linear-gradient(
+    180deg,
+    rgb(240, 214, 148),
+    white,
+    rgb(234, 213, 159)
+  );
+  justify-content: center;
+}
+#map1 iframe {
+  padding: 2rem;
+  width: 90%;
+}
+
+/********************** media_queries*************************/
+@media screen and (max-width: 1160px) {
+  .contact_inside_box1 {
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem;
+    /* background: #ddd; */
+  }
+  .form_main_box label {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .form_main_box input {
+    width: 100%;
+    height: 35px;
+    padding-left: 0.6rem;
+    margin-top: 0.4rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .form_main_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* padding-top: 1rem; */
+  }
+  .contact_inside_box1 {
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem;
+    /* background: #ddd; */
+  }
+  .form_main_box label {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .form_main_box input {
+    width: 100%;
+    height: 35px;
+    padding-left: 0.6rem;
+    margin-top: 0.4rem;
+  }
+  /*************** map section *****************/
+  #map1 iframe {
+    padding: 1rem;
+    width: 94%;
+  }
+}
